@@ -4,7 +4,10 @@ from Edge import Edge
 
 class EdgeWeightedGraph:
 
-    adjList = {}
+    adjList = None
+    
+    def __init__(self):
+        self.adjList={}
 
     def readGraph(self, file):
         f = open(file, 'r')
